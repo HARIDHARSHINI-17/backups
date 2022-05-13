@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Animal{
+                eat(){
+                    console.log("Eating");
+                }
+            }
+            class dog extends Animal{
+                run(){
+                    console.log("Running");
+                }
+            }
+            class human extends dog{
+                study(){
+                   console.log("Studying");
+                }
+            }
+          var d = new human();
+          d.eat();
+          d.run();
+          d.study();
+        </script>
+    </body>
+</html>

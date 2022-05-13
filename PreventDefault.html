@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <a href="https://goggle.com"></a>
+        <input type="button" onclick="myfunction()">
+        <script>
+        function myfunction(){
+           let link = document.querySelector("a");
+           link.addEventListener("click", event=>{
+               console.log("NO OUTPUT");
+               event.preventDefault();
+           })
+        }
+    </script>
+    </body>
+</html>

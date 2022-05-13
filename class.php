@@ -1,7 +1,16 @@
 <?php
-   class Simple{
-       public $var = 100;
+   class BankAccount{
+   public $balance;
+   public function deposit($amount){
+       if($amount>0){
+       $this->balance += $amount;
+       }
    }
-   $bal = new Simple();
-   echo $bal->var 
-   ?>
+   public function withdraw($amount){
+    if($amount <= $this->balance){
+    $this->balance -= $amount;
+    return true;
+    }
+    return false;
+ }  
+ } 
