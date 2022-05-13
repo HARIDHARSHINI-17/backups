@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Balsa_Wood_Texture.jpg/2048px-Balsa_Wood_Texture.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 440px;
+    height: 520px;
+    margin: 8% auto;
+    background: lightcyan;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;/*450 px change hidden*/
+}
+h3{
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+}
+.container form{
+    top: 50px;
+    left: 40px;
+    width: 350px;
+    position: absolute;
+}
+form input{
+    padding: 20px 10px;
+    margin: 5px 0;
+
+    border: 10%;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    outline: none;
+    background: transparent;
+}
+input[type=radio]{
+    width: 10%;
+}
+input[type=checkbox]{
+    width: 5%;
+}
+
+form textarea{
+    padding: 10px 5px;
+    text-emphasis-color: black;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    outline: indianred;
+    background: transparent;
+}
+.btn{
+    text-align: center;
+    width: 100%;
+    margin: 25px auto;
+}
+form button{
+    background-color: grey;
+    border-radius: 30px;
+    outline: none;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#step2,#step3,#step4,#step5,#step6{
+    left: 450px;
+}
+.progress-bar{
+    margin: 0 auto;
+    width: 360px;
+    height: 40px;
+    display: flex;
+    box-shadow: 0 -px 5px -1px #000;
+    position: relative;
+}
+.page-col{
+    width: 72px;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+h1{
+    text-align: center;
+}
+.message {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+#mailerr,#fnameerr,#lnameerr,#pswerr,#cpswerr,#age,#phoneErr,#yopErr{
+    color: red;
+}
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
